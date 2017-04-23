@@ -2,15 +2,15 @@ package com.example.khowoatt.bakery;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.ImageView;
+
+import com.example.khowoatt.bakery.SQL.BakeryTable;
+import com.example.khowoatt.bakery.SQL.OrderTable;
+import com.example.khowoatt.bakery.SQL.UserTable;
+import com.example.khowoatt.bakery.menu.CakeMenu;
+import com.example.khowoatt.bakery.menu.CookieMenu;
+import com.example.khowoatt.bakery.menu.DrinksMenu;
 
 public class MainActivity extends AppCompatActivity {
     private UserTable objUserTABLE;

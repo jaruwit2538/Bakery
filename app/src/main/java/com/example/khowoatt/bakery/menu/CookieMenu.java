@@ -1,19 +1,22 @@
-package com.example.khowoatt.bakery;
+package com.example.khowoatt.bakery.menu;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class DrinksMenu extends AppCompatActivity {
+import com.example.khowoatt.bakery.MainActivity;
+import com.example.khowoatt.bakery.R;
+
+public class CookieMenu extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_drinks_menu);
+        setContentView(R.layout.activity_cookie_menu);
     }
     public void onClickMain (View view){
-        Intent intent = new Intent(DrinksMenu.this,MainActivity.class);
+        Intent intent = new Intent(CookieMenu.this,MainActivity.class);
         startActivity(intent);
     }
 }

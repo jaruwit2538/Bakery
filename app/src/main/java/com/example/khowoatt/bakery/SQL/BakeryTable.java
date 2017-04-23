@@ -1,4 +1,4 @@
-package com.example.khowoatt.bakery;
+package com.example.khowoatt.bakery.SQL;
 
 import android.content.ContentValues;
 import android.content.Context;

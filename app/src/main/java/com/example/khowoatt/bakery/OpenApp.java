@@ -3,6 +3,9 @@ package com.example.khowoatt.bakery;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+
+import com.example.khowoatt.bakery.LoginRegister.Login;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -18,7 +21,7 @@ public class OpenApp extends AppCompatActivity {
         TimerTask task=new TimerTask() {
             @Override
             public void run() {
-                Intent mainIntent=new Intent().setClass(OpenApp.this,MainActivity.class);
+                Intent mainIntent=new Intent().setClass(OpenApp.this,Login.class);
                 startActivity(mainIntent);
                 finish();
             }
