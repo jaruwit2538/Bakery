@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.khowoatt.bakery.LoginRegister.Login;
 import com.example.khowoatt.bakery.SQL.BakeryTable;
 import com.example.khowoatt.bakery.SQL.OrderTable;
 import com.example.khowoatt.bakery.SQL.UserTable;
@@ -34,6 +35,11 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this,CakeMenu.class);
         startActivity(intent);
     }//ลิ้งไปหน้า Menu Cake
+
+    public void onClickMenu (View view){
+        Intent intent = new Intent(MainActivity.this, Login.class);
+        startActivity(intent);
+    }//ลิ้งกลับหน้า login
 
     public void onClickCookie (View view){
         Intent intent= new Intent(MainActivity.this,CookieMenu.class);
