@@ -21,7 +21,6 @@ public class DrinksMenu extends AppCompatActivity {
         startActivity(intent);
     }
     public void onClickMain (View view){
-        Intent intent = new Intent(DrinksMenu.this,MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }

@@ -4,5 +4,7 @@
 
     <string name="name">Bakery Shop</string>
     <string name="seemenu">See the menu?</string>
+    <string name="menu">menu</string>
+
 
 </resources>

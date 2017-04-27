@@ -17,6 +17,10 @@ public class MySQLite extends SQLiteOpenHelper {
             "(_id integer primary key, Bakery text, Source text, Price text);";
     private static final String CREATE_ORDER_TABLE = "create table orderTABLE"+
             "(_id integer primary key, officer text ,Bakery text, Date text, TotalPrice text);";
+    private static final String CREATE_DRINK_TABLE = "create table drinkTABLE"+
+            "(_id integer primary key, Drink text ,Source text, Price text);";
+    private static final String CREATE_CAKE_TABLE = "create table drinkTABLE"+
+            "(_id integer primary key, Cake text ,Source text, Price text);";
 
     public MySQLite(Context context){
         super(context, DATABASE_NAME,null,DATABASE_VERSION);
@@ -28,6 +32,8 @@ public class MySQLite extends SQLiteOpenHelper {
         sqLiteDatabase.execSQL(CREATE_USER_TABLE);
         sqLiteDatabase.execSQL(CREATE_BAKERY_TABLE);
         sqLiteDatabase.execSQL(CREATE_ORDER_TABLE);
+        sqLiteDatabase.execSQL(CREATE_DRINK_TABLE);
+        sqLiteDatabase.execSQL(CREATE_CAKE_TABLE);
 
     }
 

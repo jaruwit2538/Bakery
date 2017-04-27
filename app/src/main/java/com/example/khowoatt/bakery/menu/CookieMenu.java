@@ -21,7 +21,6 @@ public class CookieMenu extends AppCompatActivity {
         startActivity(intent);
     }
     public void onClickMain (View view){
-        Intent intent = new Intent(CookieMenu.this,MainActivity.class);
-        startActivity(intent);
+        finish();
     }
 }
